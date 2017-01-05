@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "templates",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": ""
+        },
+        "extensionKey": "jhe_websitetemplate",
+        "name": "JHE Website Template",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "",
+                "email": "jari-hermann.ernst@t-online.de",
+                "name": "Jari-Hermann Ernst, M.A.",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "JariHermannErnst"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2017-01-05 02:13",
+        "extension_builder_version": "7.6.0",
+        "be_user": "Jari-Hermann Ernst, M.A. (3)"
+    }
+}
