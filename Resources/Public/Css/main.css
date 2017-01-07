@@ -1,0 +1,99 @@
+/*Farbschema
+    Blau:		#3290ac
+    Grün:		#78ac42
+    Grau:		#62655e
+    Dunkelgrau:	#212629
+    Schwarz:	#0b1011
+*/
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-default {
+    background-color: #212629;
+    border: 0;
+    border-top: 4px solid #3290ac;
+    border-bottom: 8px solid #78ac42;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+.navbar-brand img {
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #78ac42;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #3290ac;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #3290ac;
+    background-color: transparent;
+}
+
+#mainSearchFieldWrapper {
+    display: none;
+    overflow: hidden;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+#mainSearchField {
+    height: 50px;
+    font-size: 18px;
+    border-radius: 0;
+    color: #78ac42;
+}
+
+.icon-nav {
+    border-right: 1px solid #78ac42;
+}
+.icon-nav li {
+    border-left: 1px solid #78ac42;
+}
+.icon-nav .no-border {
+    border: 0;
+}
+
+
+.visual-image {
+    padding: 0;
+}
+.visual-image img {
+    width: 100%;
+}
+
+.cite-container {
+    background-color: #78ac42;
+    color: #ffffff;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #212629;
+    color: #ffffff;
+}
+.footer .container .text-muted {
+    margin: 20px 0;
+}
