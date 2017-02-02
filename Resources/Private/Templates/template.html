@@ -1,76 +1,39 @@
         <nav class="navbar navbar-default">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img alt="Jari-Hermann Ernst, M.A." src="typo3conf/ext/jhe_websitetemplate/Resources/Public/Images/logo_desktop.png" />
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Bio</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav icon-nav navbar-right">
-                        <li class="no-border" id="mainSearchFieldWrapper">
-                            <input type="text" value="" id="mainSearchField" class="form-control" placeholder="Finden..." />
-                        </li>
-                        <li>
-                            <a href="#" title="Suche" id="searchButton">
-                                <span class="glyphicons glyphicons-search" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Kontakt">
-                                <span class="glyphicons glyphicons-envelope" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Impressum">
-                                <span class="glyphicons glyphicons-paragraph-alt" aria-hidden="true"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <f:cObject typoscriptObjectPath="lib.navbar" />
             </div>
         </nav>
 
         <div class="container-fluid visual-image">
-            <img src="typo3conf/ext/jhe_websitetemplate/Resources/Public/Images/visual_image.jpg" alt="" />
+            <f:cObject typoscriptObjectPath="lib.visual-image" />
         </div>
 
         <div class="container-fluid cite-container">
             <div class="container">
-                <cite>„Ich finde Ihren Mangel an Glauben beklagenswert.“ – Darth Vader</cite>
+                <f:cObject typoscriptObjectPath="lib.randomcite" />
             </div>
         </div>
 
         <div class="container">
            <div class="row">
-               <div class="blog-header">
+               <f:format.raw>{content_header}</f:format.raw>
+               <!--<div class="blog-header col-md-12">
                    <h1 class="blog-title">Page headline</h1>
                    <p class="lead blog-description">Page claim</p>
-               </div>
+               </div>-->
                <div class="col-md-8">
-                    Main content
+                   <f:format.raw>{content_main}</f:format.raw>
+                   <!--Main content-->
                 </div>
                 <div class="col-md-4">
-                    Aside content
+                    <f:format.raw>{content_sidebar}</f:format.raw>
+                    <!--Aside content-->
                 </div>
             </div>
         </div>
 
         <footer class="footer">
             <div class="container">
-                <p class="text-muted">&copy; Jari-Hermann Ernst, M.A. 2017</p>
+                <f:cObject typoscriptObjectPath="lib.footer" />
             </div>
         </footer>
